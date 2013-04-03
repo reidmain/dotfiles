@@ -1,0 +1,1 @@
+function grepr() { grep -r "$@" . ; }

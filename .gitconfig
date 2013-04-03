@@ -1,0 +1,28 @@
+[push]
+	default = upstream
+[core]
+	quotepath = false
+	excludesfile = ~/.gitignore
+[color]
+	ui = auto
+[color "status"]
+	added = cyan bold
+	changed = magenta bold
+	untracked = yellow bold
+[color "diff"]
+	meta = yellow bold
+	frag = red bold
+	old = magenta bold
+	new = cyan bold
+[alias]
+	s = status -s -b
+	st = status
+	d = diff
+	co = checkout
+	b = branch
+	lol = log --oneline --decorate
+	lolg = log --oneline --graph --decorate
+	lola = log --oneline --graph --decorate --all
+	pullr = pull --rebase
+	aa = add -A .
+	drtag = !"f() { git tag -d $1 && git push origin :refs/tags/$1; }; f"
