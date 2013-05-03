@@ -8,6 +8,11 @@ if [ -f ~/.bash_functions ]; then
 	source ~/.bash_functions
 fi
 
+# Load git auto-completion script.
+if [ -f ~/.git-completion.bash ]; then
+	source ~/.git-completion.bash
+fi
+
 # Update PATH variable.
 MacPorts_Path="/opt/local/bin:/opt/local/sbin"
 
