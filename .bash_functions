@@ -1,3 +1,3 @@
 function grepr() { grep -r "$@" . ; }
 
-function pcurl() { curl $@ | python -mjson.tool ; }
+function pcurl() { curl "$@" | python -mjson.tool ; }
