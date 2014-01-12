@@ -1,3 +1,6 @@
 alias l="ls -lF"
 alias la="ls -l@F"
 alias ll="ls -laF"
+alias mysql_start="sudo /usr/local/mysql/support-files/mysql.server start"
+alias mysql_restart="sudo /usr/local/mysql/support-files/mysql.server restart"
+alias mysql_stop="sudo /usr/local/mysql/support-files/mysql.server stop"
