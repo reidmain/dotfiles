@@ -7,3 +7,6 @@
 # Xcode
 project.xcworkspace/
 xcuserdata/
+
+# CocoaPods
+Pods/
