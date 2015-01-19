@@ -16,9 +16,7 @@ fi
 # Update PATH variable.
 MacPorts_Path="/opt/local/bin:/opt/local/sbin"
 
-LocalCommands_Path="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin"
-
-AndroidSDK_Path="$HOME/Development/adt-bundle-mac-x86_64/sdk/tools:$HOME/Development/adt-bundle-mac-x86_64/sdk/platform-tools"
+LocalCommands_Path="/usr/local/bin:/usr/local/sbin"
 
 Scripts_Path="$HOME/Development/Scripts"
 
@@ -26,9 +24,9 @@ rbenv_Path="$HOME/.rbenv/bin"
 
 Heroku_Path="/usr/local/heroku/bin"
 
-export PATH="$Heroku_PATH:$rbenv_Path:$Scripts_Path:$AndroidSDK_Path:$LocalCommands_Path:$MacPorts_Path:$PATH"
+PostgreSQL_Path="/opt/local/lib/postgresql93/bin"
 
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+export PATH="$Heroku_Path:$rbenv_Path:$Scripts_Path:$LocalCommands_Path:$MacPorts_Path:$PostgreSQL_Path:$PATH"
 
 # Enable rbenv shims and autocompletion.
 eval "$(rbenv init -)"
