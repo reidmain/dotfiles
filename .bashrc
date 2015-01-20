@@ -26,7 +26,7 @@ Heroku_Path="/usr/local/heroku/bin"
 
 PostgreSQL_Path="/opt/local/lib/postgresql93/bin"
 
-MySQL_Path="/user/local/mysql/bin"
+MySQL_Path="/usr/local/mysql/bin"
 
 export PATH="$Heroku_Path:$rbenv_Path:$Scripts_Path:$LocalCommands_Path:$MacPorts_Path:$PostgreSQL_Path:$MySQL_Path:$PATH"
 
