@@ -22,13 +22,9 @@ Scripts_Path="$HOME/Development/Scripts"
 
 rbenv_Path="$HOME/.rbenv/bin"
 
-Heroku_Path="/usr/local/heroku/bin"
-
 PostgreSQL_Path="/opt/local/lib/postgresql93/bin"
 
-MySQL_Path="/usr/local/mysql/bin"
-
-export PATH="$Heroku_Path:$rbenv_Path:$Scripts_Path:$LocalCommands_Path:$MacPorts_Path:$PostgreSQL_Path:$MySQL_Path:$PATH"
+export PATH="$rbenv_Path:$Scripts_Path:$LocalCommands_Path:$MacPorts_Path:$PostgreSQL_Path:$PATH"
 
 # Enable rbenv shims and autocompletion.
 eval "$(rbenv init -)"
