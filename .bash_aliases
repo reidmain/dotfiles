@@ -1,6 +1,7 @@
 alias l="ls -lF"
 alias la="ls -l@F"
 alias ll="ls -laF"
-alias mysql_start="sudo /usr/local/mysql/support-files/mysql.server start"
-alias mysql_restart="sudo /usr/local/mysql/support-files/mysql.server restart"
-alias mysql_stop="sudo /usr/local/mysql/support-files/mysql.server stop"
+
+alias ps_start="sudo su postgres -c 'pg_ctl start -D /opt/local/var/db/postgresql93/defaultdb'"
+alias ps_stop="sudo su postgres -c 'pg_ctl stop -D /opt/local/var/db/postgresql93/defaultdb'"
+alias ps_status="sudo su postgres -c 'pg_ctl status -D /opt/local/var/db/postgresql93/defaultdb'"
