@@ -13,6 +13,11 @@ if [ -f ~/.git-completion.bash ]; then
 	source ~/.git-completion.bash
 fi
 
+# Load git prompt script.
+if [ -f ~/.git-prompt.sh ]; then
+	source ~/.git-prompt.sh
+fi
+
 # Update PATH variable.
 MacPorts_Path="/opt/local/bin:/opt/local/sbin"
 
@@ -25,6 +30,8 @@ rbenv_Path="$HOME/.rbenv/bin"
 PostgreSQL_Path="/opt/local/lib/postgresql93/bin"
 
 export PATH="$rbenv_Path:$Scripts_Path:$LocalCommands_Path:$MacPorts_Path:$PostgreSQL_Path:$PATH"
+
+PROMPT_COMMAND='update_terminal_cwd;__git_ps1 "\u@\h:\W" "\\\$ "'
 
 # Enable rbenv shims and autocompletion.
 eval "$(rbenv init -)"
