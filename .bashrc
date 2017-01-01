@@ -19,17 +19,11 @@ if [ -f ~/.git-prompt.sh ]; then
 fi
 
 # Update PATH variable.
-MacPorts_Path="/opt/local/bin:/opt/local/sbin"
-
 LocalCommands_Path="/usr/local/bin:/usr/local/sbin"
-
 Scripts_Path="$HOME/Development/Scripts"
-
 rbenv_Path="$HOME/.rbenv/bin"
 
-PostgreSQL_Path="/opt/local/lib/postgresql93/bin"
-
-export PATH="$rbenv_Path:$Scripts_Path:$LocalCommands_Path:$MacPorts_Path:$PostgreSQL_Path:$PATH"
+export PATH="$rbenv_Path:$Scripts_Path:$LocalCommands_Path:$PATH"
 
 PROMPT_COMMAND='update_terminal_cwd;__git_ps1 "\u@\h:\W" "\\\$ "'
 
