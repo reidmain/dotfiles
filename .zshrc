@@ -8,6 +8,10 @@ if [ -f $current_directory/.zsh_aliases ]; then
 	source $current_directory/.zsh_aliases
 fi
 
+# Initialize completion system.
+# https://zsh.sourceforge.io/Doc/Release/Completion-System.html
+autoload -Uz compinit && compinit
+
 # Update PATH variable.
 Sublime_Path="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 rbenv_Path="$HOME/.rbenv/bin"
