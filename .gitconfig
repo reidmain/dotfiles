@@ -32,3 +32,5 @@
 	defaultBranch = master
 [pull]
 	ff = only
+[include]
+	path = ~/.gitconfig.local
