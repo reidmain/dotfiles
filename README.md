@@ -1,3 +1,7 @@
-A collection of all my dotfiles so I don't have to keep backing them up everytime I wipe my system.
+A collection of my all my dotfiles.
 
-The plan is to add some scripts that will deal with installing some of the required components (i.e. vim plugins, MacPorts, etc).
+# zsh
+
+Symlink `.zshrc` in your home directory to the one in this repo and everything should be loaded automatically.
+
+[rbenv](https://github.com/rbenv/rbenv) is supported out of the box so if you run `git clone https://github.com/rbenv/rbenv.git ~/.rbenv` and restart `zsh` you should be good to go.
