@@ -1,0 +1,5 @@
+echo "Loading .zsh_aliases"
+
+alias l="ls -lF"
+alias la="ls -la@F"
+alias ll="ls -laF"
