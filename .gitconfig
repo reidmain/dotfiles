@@ -28,3 +28,7 @@
 	drtag = !"f() { git tag -d $1 && git push origin :refs/tags/$1; }; f"
 	p = !"f() { git pull && git submodule sync --recursive && git submodule update --init --recursive; }; f"
 	su = submodule update --init --recursive
+[init]
+	defaultBranch = master
+[pull]
+	ff = only
