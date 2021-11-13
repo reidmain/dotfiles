@@ -20,11 +20,12 @@ setopt prompt_subst
 zstyle ':vcs_info:git:*' formats '🪵 %b'
 
 # Update PATH variable.
-Sublime_Path="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
+Homebrew_Path="/opt/homebrew/bin:/opt/homebrew/sbin"
 rbenv_Path="$HOME/.rbenv/bin"
+Sublime_Path="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 Scripts_Path="$HOME/Development/Scripts"
 
-export PATH="$rbenv_Path:$Sublime_Path:$Scripts_Path:$PATH"
+export PATH="$Homebrew_Path:$rbenv_Path:$Sublime_Path:$Scripts_Path:$PATH"
 
 # Update prompt to display git information.
 PROMPT='%S%F{33}%n@%m%f%s%S%F{11}%9~%f%s%S%F{199}${vcs_info_msg_0_}%f%s %# '
