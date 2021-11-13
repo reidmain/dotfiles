@@ -2,7 +2,7 @@
 	aa = add -A .
 	b = branch
 	co = checkout
-	d = diff --cached
+	d = diff HEAD
 	s = status -s -b
 	st = status
 	lol = log --oneline --decorate
