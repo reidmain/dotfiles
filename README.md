@@ -2,22 +2,22 @@ A collection of my all my dotfiles.
 
 # zsh
 
-Symlink `.zshrc` in your home directory to the one in this repo and everything should be loaded automatically.
+Symlink `.zshrc` in your home directory to the one in this repo and everything will be loaded automatically.
 
-[rbenv](https://github.com/rbenv/rbenv) is supported out of the box so if you run `git clone https://github.com/rbenv/rbenv.git ~/.rbenv` and restart `zsh` you should be good to go.
+[rbenv](https://github.com/rbenv/rbenv) is supported out of the box if it is installed at `~/.rbenv`. Run `git clone https://github.com/rbenv/rbenv.git ~/.rbenv` and after restarting `zsh` you will be good to go.
 
-[Homebrew](https://brew.sh) is supported out of the box so if you run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` and restart `zsh` you should be good to go.
+[Homebrew](https://brew.sh) is supported out of the box. Run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` and after restarting `zsh` you will be good to go.
 
 # git
 
 Symlink `.gitconfig` and `.gitignore` in your home directory to the ones in this repo.
 
-Create a `~/.gitconfig.local` and populate it with
+Create a `~/.gitconfig.local` file and populate it with
 ```
 [user]
 	name = "Your Name"
 	email = "your.email@domain.xyz"
 ```
-so that `git` understands who the author should be.
+so that `git` understands who the author is.
 
-You can also use this local config file for any other sensitive information.
+You should use this local config file for any other sensitive information that would never wanted commited to any version control system.
