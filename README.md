@@ -4,9 +4,11 @@ A collection of my all my dotfiles.
 
 Symlink `.zshrc` in your home directory to the one in this repo and everything will be loaded automatically.
 
+[Homebrew](https://brew.sh) is supported out of the box. Run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` and after restarting `zsh` you will be good to go.
+
 [rbenv](https://github.com/rbenv/rbenv) is supported out of the box if it is installed at `~/.rbenv`. Run `git clone https://github.com/rbenv/rbenv.git ~/.rbenv` and after restarting `zsh` you will be good to go.
 
-[Homebrew](https://brew.sh) is supported out of the box. Run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` and after restarting `zsh` you will be good to go.
+[Rust](https://www.rust-lang.org) is supported out of the box. Run `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` and after restarting `zsh` you will be good to go.
 
 # git
 
